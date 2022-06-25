@@ -24,11 +24,11 @@ app.use(express.json())
 
 
 
-app.use('/groups', groupRoutes)
-app.use('/members', memberRoutes)
-app.use('/groupMembers', groupMemberRoutes)
-app.use('/meetings',meetingRoutes)
-app.use('/attends',attendsRoutes)
+app.use('/api/groups', groupRoutes)
+app.use('/api/members', memberRoutes)
+app.use('/api/groupMembers', groupMemberRoutes)
+app.use('/api/meetings',meetingRoutes)
+app.use('/api/attends',attendsRoutes)
 
 
 if(process.env.NODE_ENV === 'production'){
